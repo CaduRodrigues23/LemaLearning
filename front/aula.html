@@ -72,15 +72,15 @@ section {
 	padding: none;
 }
 
-.exerciseItem ol {
-	list-style-type:lower-alpha;
+.exerciseItem ul {
+	list-style-type:none;
 }
 
-.exerciseItem ol li {
+.exerciseItem ul li {
 	font-size: 110%;
 	font-weight: bold;
 	padding: 1%;
-	margin: 1% 0 1% -1%;
+	margin: 1% 0 1% -10%;
 	background: #EEE;
 }
 
@@ -154,11 +154,16 @@ section {
 		color: #FFF;
 	}
 	
-	.exerciseSection ol {
+	.exerciseItem ul li {
+		margin-left: 0;
+	}
+	
+	
+	.exerciseSection ul {
 		margin-left: -3%;
 	}
 	
-	.exerciseSection ol li {
+	.exerciseSection ul li {
 		background: none;
 	}
 	
@@ -173,6 +178,8 @@ section {
 		border: none;
 	}
 	
+	
+
 	.separador {
 		float: left;
 		width: 100%;
@@ -204,35 +211,35 @@ section {
 				<div class="separador">
 				<article class="exerciseItem">
 					<h2><b>Ex 1:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
-					<ol>
+					<ul>
 						<li><input type="radio" name="q1" value="0" />Lorem</li>
 						<li><input type="radio" name="q1" value="1" />Ipsum</li>
 						<li><input type="radio" name="q1" value="2" />Dolor</li>
 						<li><input type="radio" name="q1" value="3" />Sit</li>
 						<li><input type="radio" name="q1" value="5" />Amet</li>
-					</ol>
+					</ul>
 				</article>
 				<article class="exerciseItem">
 					<h2><b>Ex 2:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
-					<ol>
+					<ul>
 						<li><input type="radio" name="q2" value="0" />Lorem</li>
 						<li><input type="radio" name="q2" value="1" />Ipsum</li>
 						<li><input type="radio" name="q2" value="2" />Dolor</li>
 						<li><input type="radio" name="q2" value="3" />Sit</li>
 						<li><input type="radio" name="q2" value="5" />Amet</li>
-					</ol>
+					</ul>
 				</article>
 				</div>
 				<div class="separador">
 				<article class="exerciseItem">
 					<h2><b>Ex 3:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
-					<ol>
+					<ul>
 						<li><input type="radio" name="q3" value="0" />Lorem</li>
 						<li><input type="radio" name="q3" value="1" />Ipsum</li>
 						<li><input type="radio" name="q3" value="2" />Dolor</li>
 						<li><input type="radio" name="q3" value="3" />Sit</li>
 						<li><input type="radio" name="q3" value="5" />Amet</li>
-					</ol>
+					</ul>
 				</article>
 				</div>
 				<input type="submit" value="Terminei" />
