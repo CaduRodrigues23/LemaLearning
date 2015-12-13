@@ -39,6 +39,10 @@ section {
 	
 }
 
+.displaySectionBackground {
+	display: none;
+}
+
 .displaySection h2 {
 	background: #FCE4BA;
 	text-align: center;
@@ -107,6 +111,10 @@ section {
 		margin: 0 5%;
 	}
 	
+
+.displaySection {
+	height: 300px;
+}
 	
 .displaySection h2 {
 	background: #FCE4BA;
@@ -140,7 +148,32 @@ section {
     width: 120%;
     
 }
-            
+          
+--.displaySection h2,
+.infoBox, .infoBoxImg {
+	z-index: 0;
+	position: relative;
+}
+
+
+.displaySectionBackground {
+	width: 90%;
+	z-index: -1;
+	position: absolute;
+	height: inherit;
+	display: inherit;
+	overflow: hidden;
+	float: left;
+	margin: 0 auto;
+}
+
+.displaySectionBackground img {
+	--z-index: -1;
+	width: 120%;
+	margin: -10% 0 0 -10%;
+	
+}
+  
 .ementaItem {
 	margin: 1% 2% 1% 2%;
 	width: 46%;
@@ -185,6 +218,7 @@ section {
 				<p>Exercícios<br />10 horas</p>
 				<p>Nível<br />Moderado</p>
 			</div>
+			<div class="displaySectionBackground"><img src="img/rollercoaster.jpg"/></div>
 		</section>
 		<section class="infoSection">
 			<div class="ementaItem">
